@@ -2,13 +2,13 @@
 import { MiddlewareHandlerContext } from "$fresh/server.ts";
 
 import puppeteer from "https://deno.land/x/puppeteer@16.2.0/mod.ts";
-import { config } from "https://deno.land/x/dotenv/mod.ts";
+import "https://deno.land/std@0.175.0/dotenv/load.ts";
 
 interface State {
   data: string;
 }
 
-const BROWSERLESS_TOKEN = config()["BROWSERLESS_TOKEN"];
+const BROWSERLESS_TOKEN = Deno.env.get("BROWSERLESS_TOKEN");
 if (BROWSERLESS_TOKEN === undefined) {
   throw new TypeError("Missing BROWSERLESS_TOKEN environment variable.");
 }

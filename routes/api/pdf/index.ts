@@ -14,7 +14,7 @@ const exportPdf = async () => {
 export const handler: Handlers<any, { data: string }> = {
   async GET(_req, ctx) {
     const file = await exportPdf();
-    console.log("file, cornudo", file);
+    console.log("file", file);
     return new Response(file);
   },
 };
