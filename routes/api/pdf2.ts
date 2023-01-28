@@ -15,7 +15,7 @@ const exportPdf = async () => {
   try {
     const page = await browser.newPage();
     await page.goto(
-      "https://registry.jsonresume.org/thomasdavis?theme=spartan",
+      "https://underium-my-resume-kr0rv90a6xpg.deno.dev/resume",
       {
         waitUntil: "networkidle2",
       },
