@@ -20,7 +20,7 @@ const exportPdf = async () => {
   try {
     const page = await browser.newPage();
     await page.goto(
-      "https://registry.jsonresume.org/thomasdavis?theme=spartan",
+      "https://javiercaceres.es/resume",
       {
         waitUntil: "networkidle2",
       },

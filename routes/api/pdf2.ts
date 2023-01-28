@@ -15,7 +15,7 @@ const exportPdf = async () => {
   try {
     const page = await browser.newPage();
     await page.goto(
-      "https://underium-my-resume-kr0rv90a6xpg.deno.dev/resume",
+      "https://underium-my-resume.deno.dev/resume",
       {
         waitUntil: "networkidle2",
       },
