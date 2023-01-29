@@ -17,7 +17,7 @@ export default function Home() {
         <p class="my-6">
           Nothing to see here (yet)
         </p>
-        {/*<DownloadPdf />*/}
+        <DownloadPdf />
         <p>
           <a
             target="blank"
