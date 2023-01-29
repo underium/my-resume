@@ -1,7 +1,7 @@
 // routes/_middleware.ts
 import { MiddlewareHandlerContext } from "$fresh/server.ts";
 
-import puppeteer from "https://deno.land/x/puppeteer@16.2.0/mod.ts";
+import puppeteer from "https://deno.land/x/puppeteer@9.0.2/mod.ts";
 import "https://deno.land/std@0.175.0/dotenv/load.ts";
 
 interface State {
@@ -17,20 +17,24 @@ const exportPdf = async () => {
   const browser = await puppeteer.connect({
     browserWSEndpoint: `wss://chrome.browserless.io?token=${BROWSERLESS_TOKEN}`,
   });
+  /*
+  const browser = await puppeteer.launch({
+    executablePath: "/Applications/Chromium.app/Contents/MacOS/Chromium",
+  });*/
   try {
     const page = await browser.newPage();
     await page.goto(
-      "https://underium-my-resume.deno.dev/resume",
+      "https://google.es",
       {
         waitUntil: "networkidle2",
       },
     );
-    await page.pdf({
-      path: "static/my-resume.pdf",
-      format: "A4",
+    const stream = await page.pdf({
+      format: "a4",
     });
-    console.log("Termina de procesarlo");
-    return "my-resume.pdf";
+
+    const base64 = btoa(String.fromCharCode(...new Uint8Array(stream)));
+    return base64;
   } catch (error) {
     console.log(error);
   } finally {
@@ -39,11 +43,11 @@ const exportPdf = async () => {
 };
 
 export async function handler(
-  req: Request,
+  _req: Request,
   ctx: MiddlewareHandlerContext<State>,
 ) {
+  console.log("GO!");
   const value: string = await exportPdf() as string;
-  console.log("value", value);
   ctx.state.data = value;
   const resp = await ctx.next();
   resp.headers.set("server", "fresh server");

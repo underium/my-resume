@@ -3,27 +3,21 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/api/download.ts";
-import * as $1 from "./routes/api/joke.ts";
-import * as $2 from "./routes/api/pdf/_middleware.ts";
-import * as $3 from "./routes/api/pdf/index.ts";
-import * as $4 from "./routes/api/pdf2.ts";
-import * as $5 from "./routes/download.tsx";
-import * as $6 from "./routes/index.tsx";
-import * as $7 from "./routes/resume.tsx";
+import * as $0 from "./routes/api/pdf/_middleware.ts";
+import * as $1 from "./routes/api/pdf/index.ts";
+import * as $2 from "./routes/download.tsx";
+import * as $3 from "./routes/index.tsx";
+import * as $4 from "./routes/resume.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 import * as $$1 from "./islands/Download.tsx";
 
 const manifest = {
   routes: {
-    "./routes/api/download.ts": $0,
-    "./routes/api/joke.ts": $1,
-    "./routes/api/pdf/_middleware.ts": $2,
-    "./routes/api/pdf/index.ts": $3,
-    "./routes/api/pdf2.ts": $4,
-    "./routes/download.tsx": $5,
-    "./routes/index.tsx": $6,
-    "./routes/resume.tsx": $7,
+    "./routes/api/pdf/_middleware.ts": $0,
+    "./routes/api/pdf/index.ts": $1,
+    "./routes/download.tsx": $2,
+    "./routes/index.tsx": $3,
+    "./routes/resume.tsx": $4,
   },
   islands: {
     "./islands/Counter.tsx": $$0,

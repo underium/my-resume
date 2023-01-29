@@ -7,17 +7,30 @@ interface Props {
 }
 
 async function exportPdf() {
-  await fetch("/api/pdf")
-    .then((response) => response.text())
-    .then((text) => {
-      const a = document.createElement("a");
-      a.href = `${text}`;
-      a.download = `file-${text}`;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      console.warn(text);
-    });
+  const response = await fetch("/api/pdf");
+  const base64 = await response.text();
+  console.log(base64);
+
+  const obj = document.createElement("object");
+  obj.style.width = "100%";
+  obj.style.height = "842pt";
+  obj.type = "application/pdf";
+  obj.data = "data:application/pdf;base64," + base64;
+
+  const link = document.createElement("a");
+  link.innerHTML = "Download PDF file";
+  link.download = "file.pdf";
+  link.href = "data:application/octet-stream;base64," + base64;
+  link.click();
+  link.remove();
+
+  /*
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "my-resume.pdf";
+  link.click();
+  link.remove();
+	*/
 }
 
 export default function DownloadPdf(props: Props) {
@@ -30,14 +43,6 @@ export default function DownloadPdf(props: Props) {
         }}
       >
         Download PDF
-      </Button>
-      <Button
-        onClick={() => {
-          console.log("veamos que pasa");
-          exportPdf();
-        }}
-      >
-        Download PDF 2
       </Button>
     </div>
   );
