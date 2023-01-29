@@ -14,13 +14,13 @@ if (BROWSERLESS_TOKEN === undefined) {
 }
 
 const exportPdf = async () => {
-  const browser = await puppeteer.connect({
+  /*const browser = await puppeteer.connect({
     browserWSEndpoint: `wss://chrome.browserless.io?token=${BROWSERLESS_TOKEN}`,
-  });
-  /*
+  });*/
+
   const browser = await puppeteer.launch({
     executablePath: "/Applications/Chromium.app/Contents/MacOS/Chromium",
-  });*/
+  });
   try {
     const page = await browser.newPage();
     await page.goto(

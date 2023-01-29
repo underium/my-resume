@@ -15,10 +15,9 @@ export default function Home() {
           alt="the fresh logo: a sliced lemon dripping with juice"
         />
         <p class="my-6">
-          Welcome to `fresh`. Try updating this message in the
-          ./routes/index.tsx file, and refresh.
+          Nothing to see here (yet)
         </p>
-        <DownloadPdf />
+        {/*<DownloadPdf />*/}
         <p>
           <a
             target="blank"
