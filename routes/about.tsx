@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <div class="flex h-screen justify-center items-center flex-col">
         <Header active="false" />
-        <div class="p-4 flex-3 w-full h-full  mx-auto">
+        <div class="p-4 flex-3 w-full h-full mx-auto">
           <img
             src="/logo.svg"
             class="w-32 h-32"

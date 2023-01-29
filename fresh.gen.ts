@@ -3,9 +3,9 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/api/pdf/_middleware.ts";
-import * as $1 from "./routes/api/pdf/index.ts";
-import * as $2 from "./routes/download.tsx";
+import * as $0 from "./routes/about.tsx";
+import * as $1 from "./routes/api/pdf/_middleware.ts";
+import * as $2 from "./routes/api/pdf/index.ts";
 import * as $3 from "./routes/index.tsx";
 import * as $4 from "./routes/resume.tsx";
 import * as $$0 from "./islands/Counter.tsx";
@@ -13,9 +13,9 @@ import * as $$1 from "./islands/Download.tsx";
 
 const manifest = {
   routes: {
-    "./routes/api/pdf/_middleware.ts": $0,
-    "./routes/api/pdf/index.ts": $1,
-    "./routes/download.tsx": $2,
+    "./routes/about.tsx": $0,
+    "./routes/api/pdf/_middleware.ts": $1,
+    "./routes/api/pdf/index.ts": $2,
     "./routes/index.tsx": $3,
     "./routes/resume.tsx": $4,
   },

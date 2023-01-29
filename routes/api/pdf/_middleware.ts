@@ -24,13 +24,15 @@ const exportPdf = async () => {
   try {
     const page = await browser.newPage();
     await page.goto(
-      "https://underium-my-resume.deno.dev/resume",
+      "https://www.cfg.com",
       {
+        timeout: 30000,
         waitUntil: "networkidle2",
       },
     );
     const stream = await page.pdf({
       format: "a4",
+      printBackground: false,
     });
 
     const base64 = btoa(String.fromCharCode(...new Uint8Array(stream)));
