@@ -3,25 +3,41 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/about.tsx";
-import * as $1 from "./routes/api/pdf/_middleware.ts";
-import * as $2 from "./routes/api/pdf/index.ts";
-import * as $3 from "./routes/index.tsx";
-import * as $4 from "./routes/resume.tsx";
-import * as $$0 from "./islands/Counter.tsx";
-import * as $$1 from "./islands/Download.tsx";
+import * as $0 from "./routes/_middleware.ts";
+import * as $1 from "./routes/about.tsx";
+import * as $2 from "./routes/api/pdf/_middleware.ts";
+import * as $3 from "./routes/api/pdf/index.ts";
+import * as $4 from "./routes/api/sign-in/index.ts";
+import * as $5 from "./routes/api/sign-out/index.ts";
+import * as $6 from "./routes/api/sign-up/index.ts";
+import * as $7 from "./routes/index.tsx";
+import * as $8 from "./routes/resume.tsx";
+import * as $9 from "./routes/secret.tsx";
+import * as $10 from "./routes/sign-in.tsx";
+import * as $11 from "./routes/sign-up.tsx";
+import * as $$0 from "./islands/AuthForm.tsx";
+import * as $$1 from "./islands/Counter.tsx";
+import * as $$2 from "./islands/Download.tsx";
 
 const manifest = {
   routes: {
-    "./routes/about.tsx": $0,
-    "./routes/api/pdf/_middleware.ts": $1,
-    "./routes/api/pdf/index.ts": $2,
-    "./routes/index.tsx": $3,
-    "./routes/resume.tsx": $4,
+    "./routes/_middleware.ts": $0,
+    "./routes/about.tsx": $1,
+    "./routes/api/pdf/_middleware.ts": $2,
+    "./routes/api/pdf/index.ts": $3,
+    "./routes/api/sign-in/index.ts": $4,
+    "./routes/api/sign-out/index.ts": $5,
+    "./routes/api/sign-up/index.ts": $6,
+    "./routes/index.tsx": $7,
+    "./routes/resume.tsx": $8,
+    "./routes/secret.tsx": $9,
+    "./routes/sign-in.tsx": $10,
+    "./routes/sign-up.tsx": $11,
   },
   islands: {
-    "./islands/Counter.tsx": $$0,
-    "./islands/Download.tsx": $$1,
+    "./islands/AuthForm.tsx": $$0,
+    "./islands/Counter.tsx": $$1,
+    "./islands/Download.tsx": $$2,
   },
   baseUrl: import.meta.url,
   config,

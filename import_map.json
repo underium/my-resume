@@ -8,10 +8,20 @@
     "preact/": "https://esm.sh/preact@10.11.0/",
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
-    "showdown": "https://esm.sh/v104/*showdown@2.1.0"
+    "redis": "https://esm.sh/v104/*redis@4.6.3",
+    "showdown": "https://esm.sh/v104/*showdown@2.1.0",
+    "std": "https://esm.sh/v104/std@0.1.40",
+    "supabase": "https://esm.sh/@supabase/supabase-js@2.1.0"
   },
   "scopes": {
     "https://esm.sh/v104/": {
+      "@redis/bloom": "https://esm.sh/v104/@redis/bloom@1.2.0",
+      "@redis/client": "https://esm.sh/v104/@redis/client@1.5.4",
+      "@redis/graph": "https://esm.sh/v104/@redis/graph@1.1.0",
+      "@redis/json": "https://esm.sh/v104/@redis/json@1.0.4",
+      "@redis/search": "https://esm.sh/v104/@redis/search@1.1.1",
+      "@redis/time-series": "https://esm.sh/v104/@redis/time-series@1.0.4",
+      "bin-links": "https://esm.sh/v104/bin-links@4.0.1",
       "commander": "https://esm.sh/v104/commander@9.5.0",
       "cosmiconfig": "https://esm.sh/v104/cosmiconfig@8.0.0",
       "cross-fetch": "https://esm.sh/v104/cross-fetch@3.1.5",
@@ -19,12 +29,14 @@
       "devtools-protocol": "https://esm.sh/v104/devtools-protocol@0.0.1019158",
       "extract-zip": "https://esm.sh/v104/extract-zip@2.0.1",
       "https-proxy-agent": "https://esm.sh/v104/https-proxy-agent@5.0.1",
+      "node-fetch": "https://esm.sh/v104/node-fetch@3.3.0",
       "progress": "https://esm.sh/v104/progress@2.0.3",
       "proxy-from-env": "https://esm.sh/v104/proxy-from-env@1.1.0",
       "puppeteer-core": "https://esm.sh/v104/puppeteer-core@19.6.2",
       "recast": "https://esm.sh/v104/recast@0.12.9",
       "rimraf": "https://esm.sh/v104/rimraf@3.0.2",
       "tar-fs": "https://esm.sh/v104/tar-fs@2.1.1",
+      "tar": "https://esm.sh/v104/tar@6.1.13",
       "unbzip2-stream": "https://esm.sh/v104/unbzip2-stream@1.4.3",
       "ws": "https://esm.sh/v104/ws@8.8.1"
     }

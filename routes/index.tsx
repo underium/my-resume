@@ -1,41 +1,31 @@
 import { Head } from "$fresh/runtime.ts";
-import DownloadPdf from "../islands/Download.tsx";
-import { asset } from "$fresh/runtime.ts";
-import Header from "../components/Header.tsx";
-import Footer from "../components/Footer.tsx";
+import { Layout } from "../components/Layout.tsx";
+import { getCookies } from "https://deno.land/std@0.171.0/http/cookie.ts";
+import { Handlers, PageProps } from "https://deno.land/x/fresh@1.1.2/server.ts";
 
-export default function Home() {
+export type Data = {
+  isAllowed: boolean;
+};
+
+export const handler: Handlers = {
+  GET(req, ctx) {
+    const cookies = getCookies(req.headers);
+    return ctx.render({ isAllowed: cookies.auth == "superzitrone" });
+  },
+};
+
+export default function Home({ data: { isAllowed } }: PageProps<Data>) {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>My Resume</title>
       </Head>
-      <div class="flex h-screen justify-center items-center flex-col">
-        <Header active="false" />
-        <div class="p-4 flex-3 w-full h-full  mx-auto">
-          <img
-            src="/logo.svg"
-            class="w-32 h-32"
-            alt="the fresh logo: a sliced lemon dripping with juice"
-          />
-          <p class="my-6">
-            Nothing to see here (yet)
-          </p>
-          <DownloadPdf />
-          <p>
-            <a
-              target="blank"
-              rel="noreferrer"
-              href={asset("my-resume.pdf")}
-            >
-              View brochure
-            </a>
-          </p>
+      <Layout isAllowed={isAllowed}>
+        <div class="text-6xl font-bold flex justify-center items-center h-full">
+          {isAllowed && <p>Logged in!</p>}
+          {!isAllowed && <p>Not logged in!</p>}
         </div>
-        <Footer>
-          <div>test</div>
-        </Footer>
-      </div>
+      </Layout>
     </>
   );
 }
