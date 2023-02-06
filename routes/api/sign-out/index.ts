@@ -1,10 +1,21 @@
 import { Handlers } from "$fresh/server.ts";
-import { deleteCookie } from "https://deno.land/std@0.171.0/http/cookie.ts";
+import {
+  deleteCookie,
+  getCookies,
+} from "https://deno.land/std@0.171.0/http/cookie.ts";
+import { redis } from "../../../lib/redis.ts";
 
 export const handler: Handlers = {
-  GET(req) {
+  async GET(req) {
     const url = new URL(req.url);
     const headers = new Headers(req.headers);
+
+    const cookies = getCookies(req.headers);
+    const access_token = cookies.auth;
+
+    if (access_token) {
+      await redis.del(access_token);
+    }
 
     deleteCookie(headers, "auth", { path: "/", domain: url.hostname });
 

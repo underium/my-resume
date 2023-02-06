@@ -11,10 +11,11 @@ import * as $4 from "./routes/api/sign-in/index.ts";
 import * as $5 from "./routes/api/sign-out/index.ts";
 import * as $6 from "./routes/api/sign-up/index.ts";
 import * as $7 from "./routes/index.tsx";
-import * as $8 from "./routes/resume.tsx";
-import * as $9 from "./routes/secret.tsx";
-import * as $10 from "./routes/sign-in.tsx";
-import * as $11 from "./routes/sign-up.tsx";
+import * as $8 from "./routes/resume/[...resume].tsx";
+import * as $9 from "./routes/resume/_middleware.ts";
+import * as $10 from "./routes/secret.tsx";
+import * as $11 from "./routes/sign-in.tsx";
+import * as $12 from "./routes/sign-up.tsx";
 import * as $$0 from "./islands/AuthForm.tsx";
 import * as $$1 from "./islands/Counter.tsx";
 import * as $$2 from "./islands/Download.tsx";
@@ -29,10 +30,11 @@ const manifest = {
     "./routes/api/sign-out/index.ts": $5,
     "./routes/api/sign-up/index.ts": $6,
     "./routes/index.tsx": $7,
-    "./routes/resume.tsx": $8,
-    "./routes/secret.tsx": $9,
-    "./routes/sign-in.tsx": $10,
-    "./routes/sign-up.tsx": $11,
+    "./routes/resume/[...resume].tsx": $8,
+    "./routes/resume/_middleware.ts": $9,
+    "./routes/secret.tsx": $10,
+    "./routes/sign-in.tsx": $11,
+    "./routes/sign-up.tsx": $12,
   },
   islands: {
     "./islands/AuthForm.tsx": $$0,

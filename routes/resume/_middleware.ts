@@ -2,22 +2,12 @@
 
 import { MiddlewareHandlerContext } from "$fresh/server.ts";
 import { getCookies } from "https://deno.land/std@0.171.0/http/cookie.ts";
-import { Bulk } from "https://deno.land/x/redis@v0.29.0/mod.ts";
-import { redis } from "../lib/redis.ts";
 
 type User = {
   id: number;
   name: string;
   access_token: string;
 };
-
-const ProtectedRoutes = [
-  "/secret",
-  "/api/pdf",
-  "/about",
-  "/resume",
-  "/sign-out",
-];
 
 export type ServerState = {
   user: User | null;
@@ -28,30 +18,26 @@ export async function handler(
   req: Request,
   ctx: MiddlewareHandlerContext<ServerState>,
 ) {
-  const url = new URL(req.url);
   const cookies = getCookies(req.headers);
   const access_token = cookies.auth;
-
-  //const protected_route = url.pathname == "/secret";
-  const protected_route = ProtectedRoutes.includes(url.pathname);
 
   const headers = new Headers();
   headers.set("location", "/");
 
-  if (protected_route && !access_token) {
+  if (!access_token) {
     // Can't use 403 if we want to redirect to home page.
     return new Response(null, { headers, status: 303 });
   }
 
   if (access_token) {
-    const session: Bulk = await redis.get(access_token);
+    // Here, we will have an actual lookup of user data in the future.
+    const user_data = { id: 42, name: "Spongebob", access_token };
 
-    if (protected_route && !session) {
+    if (!user_data) {
       return new Response(null, { headers, status: 303 });
     }
 
-    const user = JSON.parse(session!.toString())?.user;
-    ctx.state.user = user;
+    ctx.state.user = user_data;
   }
 
   return await ctx.next();
