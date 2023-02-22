@@ -1,0 +1,301 @@
+{
+  "job-1": {
+    "name": "Monitor de Ventas en Restauración",
+    "company": "Ameba Research, SL",
+    "position": "Full Stack Engineer",
+    "startDate": "Aug 2022",
+    "endDate": null,
+    "description": [
+      "MVR is a platform that provides complete weekly insights on the fast-food market. Clients from different companies have access to comprehensive data and analysis of their performance against the market and / or direct competitors"
+    ],
+    "tags": [
+      "React",
+      "TypeScript",
+      "GraphQL",
+      "NodeJS",
+      "MySQL",
+      "Docker",
+      "Plesk",
+      "Azure DevOps"
+    ],
+    "tasks": [
+      "Full stack engineering",
+      "Integral project management"
+    ],
+    "isTop": true
+  },
+  "job-2": {
+    "name": "Big Data Team - Data Scientist Profile Exams",
+    "company": "Informática El Corte Inglés, S.A.",
+    "position": "Full Stack Developer",
+    "startDate": "Jan 2022",
+    "endDate": "Oct 2022",
+    "description": [
+      "BDT at El Corte Inglés requested a solution to allow their candidates to take technical exams remotely. I developed an application to retrieve candidate personal information from Moodle. The exam presented them with a battery of randomly selected questions, as well as code tests to prove their Python and SQL knowledge and skills. I needed to research a custom-made solution to send the PDF of the exam to Moodle, so the recruiters could download them from the candidates’ profiles."
+    ],
+    "tags": [
+      "React",
+      "CSS Modules",
+      "SCORM",
+      "REST"
+    ],
+    "tasks": [
+      "Full stack development",
+      "Design",
+      "Research of a solution to a special request of the client"
+    ],
+    "isTop": false
+  },
+  "job-3": {
+    "name": "UTC",
+    "company": "Sustainable ITS, SL",
+    "position": "Full Stack Engineer",
+    "startDate": "May 2021",
+    "endDate": "Sep 2022",
+    "description": [
+      "SUITS, SL is a company that operates vehicles for enforcing traffic laws. They contacted me to update the frontend of an existing application they were using, which was built with outdated technologies that prevented them from scaling. I eventually also assisted with modernizing the backend."
+    ],
+    "tags": [
+      "React",
+      "NextJS",
+      "Styled Comp.",
+      "Mapbox",
+      "Docker",
+      "NodeJS",
+      "TypeScript",
+      "Cypress"
+    ],
+    "tasks": [
+      "Full stack development"
+    ],
+    "isTop": false
+  },
+  "job-4": {
+    "name": "PAE & GAE",
+    "company": "Agencia de Seguros Vinculada, S.A.",
+    "position": "Full Stack Developer",
+    "startDate": "Apr 2020",
+    "endDate": "Jul 2022",
+    "description": [
+      "This is a collection of five different sites that were deployed on the company's intranet regarding the new insurance products they were launching to the market between 2020 and 2022. The strongest point was the graphic design and use of multimedia assets."
+    ],
+    "tags": [
+      "React",
+      "CSS",
+      "IIS",
+      "React Spring",
+      "gsap"
+    ],
+    "tasks": [
+      "Design",
+      "Development",
+      "Video editing"
+    ],
+    "isTop": true
+  },
+  "job-5": {
+    "name": "CityXplorer",
+    "company": "EYSA, SAU",
+    "position": "Full Stack Engineer",
+    "startDate": "Oct 2019",
+    "endDate": null,
+    "description": [
+      "CityXplorer is the foundation of EYSA's business. It enables city halls worldwide to handle parking spots, traffic fines, parking meters and traffic enforcement cars and access. I consider this as the most significant project I have been a part of in terms of the technologies used. It covers everything, from user management to monitoring the location of human controllers and cars, and a fully customizable dashboard with various widgets such as graphs, traffic camera in real time, and maps."
+    ],
+    "tags": [
+      "React",
+      "Tailwind",
+      "NextJS",
+      "TypeScript",
+      "GraphQL",
+      "NETCore",
+      "MS SQL Server",
+      "Azure Devops",
+      "Mapbox",
+      "AWS",
+      "IIS",
+      "Cypress"
+    ],
+    "tasks": [
+      "Design",
+      "Full engineering of the frontend",
+      "GraphQL interface",
+      "Parts of the backend",
+      "Testing"
+    ],
+    "isTop": true
+  },
+  "job-6": {
+    "name": "Nueva Colección de Sartenes",
+    "company": "El Corte Inglés, S.A.",
+    "position": "Full Stack Developer",
+    "startDate": "Jun 2019",
+    "endDate": "Jul 2019",
+    "description": [
+      "This project was a game that was used to showcase the new collection of pans to salespeople in shopping centers across the country. The application had an eye-catching visual style and animations, and presented the complete catalog of pans, as well as an analysis of the materials they were made of. It was a great success and served as a model for similar products in the following years."
+    ],
+    "tags": [
+      "React",
+      "SCORM",
+      "Moodle"
+    ],
+    "tasks": [
+      "Design",
+      "Full stack development"
+    ],
+    "isTop": true
+  },
+  "job-7": {
+    "name": "Seguridad en la Información III",
+    "company": "El Corte Inglés, S.A.",
+    "position": "Full Stack Developer",
+    "startDate": "Mar 2019",
+    "endDate": "May 2019",
+    "description": [
+      "This project was the third in a series focused on information security. The IT department requested an application built using React, which would present employees with simulated phishing emails and other deceptive information. The goal of the application was to train employees to identify suspicious information and to track where and when they clicked within the simulated emails, among other things."
+    ],
+    "tags": [
+      "React",
+      "CSS Modules",
+      "NodeJS",
+      "SCORM"
+    ],
+    "tasks": [
+      "Design",
+      "Full stack development"
+    ],
+    "isTop": false
+  },
+  "job-8": {
+    "name": "ParkXplorer Demo - ReactJS",
+    "company": "EYSA, SAU",
+    "position": "Full Stack Engineer",
+    "startDate": "Jan 2019",
+    "endDate": "Apr 2019",
+    "description": [
+      "This was the second demonstration, and it was the one that convinced EYSA managers to choose React over Angular to develop CityXplorer."
+    ],
+    "tags": [
+      "React",
+      "CSS Modules",
+      "Express",
+      "MS SQL Server",
+      "Docker"
+    ],
+    "tasks": [
+      "Design",
+      "Full engineering of the frontend",
+      "Custom APIs"
+    ],
+    "isTop": false
+  },
+
+  "job-9": {
+    "name": "ParkXplorer Demo - Angular 2",
+    "company": "EYSA, SAU",
+    "position": "Full Stack Engineer",
+    "startDate": "Aug 2018",
+    "endDate": "Jan 2019",
+    "description": [
+      "EYSA reached out for a demonstration of my skills to evaluate my ability to develop their most significant project to date, CityXplorer. They were deciding between Angular and React for the frontend, and this was the first demonstration as part of that decision-making process."
+    ],
+    "tags": [
+      "Angular 2",
+      "CSS Modules",
+      "Express",
+      "MS SQL Server",
+      "Docker"
+    ],
+    "tasks": [
+      "Design",
+      "Full engineering of the frontend",
+      "Custom APIs"
+    ],
+    "isTop": false
+  },
+
+  "job-10": {
+    "name": "Generación de Informes",
+    "company": "El Corte Inglés, S.A.",
+    "position": "Full Stack Developer",
+    "startDate": "Jun 2017",
+    "endDate": "Jun 2018",
+    "description": [
+      "The company’s managers requested an app to be deployed on their intranet as part of their modernization efforts. The purpose of this app is to allow them to generate reports on various topics."
+    ],
+    "tags": [
+      "Angular 2",
+      "CSS",
+      "MySQL"
+    ],
+    "tasks": [
+      "Full stack development"
+    ],
+    "isTop": false
+  },
+
+  "job-11": {
+    "name": "Gestión de Inversiones",
+    "company": "CESS, S.A.",
+    "position": "Full Stack Developer",
+    "startDate": "Sep 2016",
+    "endDate": "Apr 2017",
+    "description": [
+      "After a small demonstration using Angular 1.x, a request was made as part of a series of tools to aid investors in managing their portfolios. This was the first time I deployed a professional application built with Angular 2. It was done as it was coming out of beta."
+    ],
+    "tags": [
+      "Angular 2",
+      "CSS",
+      "MySQL"
+    ],
+    "tasks": [
+      "Full stack development"
+    ],
+    "isTop": false
+  },
+  "job-12": {
+    "name": "POS PSD2 Simulators",
+    "company": "Repsol - Gespevesa, S.A.",
+    "position": "Full Stack Developer",
+    "startDate": "Dec 2015",
+    "endDate": "Jun 2016",
+    "description": [
+      "This project involved building a collection of POS simulators for Repsol - Gespevesa employees to meet PSD2 compliance requirements. The simulators were designed to simulate different payment scenarios, including various payment methods and customer purchases of products and services."
+    ],
+    "tags": [
+      "HTML 5",
+      "CSS",
+      "SCORM",
+      "jQuery",
+      "gsap"
+    ],
+    "tasks": [
+      "Full stack development"
+    ],
+    "isTop": true
+  },
+  "job-13": {
+    "name": "E-Learning Solutions",
+    "company": "El Corte Inglés, S.A.",
+    "position": "Full Stack Developer",
+    "startDate": "Jun 2002",
+    "endDate": null,
+    "description": [
+      "I’ve deployed hundreds of digital products like SCORM courses and websites in collaboration with ECI’s HR team. Those products comprehend almost every aspect of El Corte Inglés business (fashion, travel, house appliances, insurances). All of this while shaping their workflow through the years including new technologies research and adoption."
+    ],
+    "tags": [
+      "Authorware",
+      "Flash",
+      "HTML 5",
+      "SCORM",
+      "jQuery",
+      "gsap"
+    ],
+    "tasks": [
+      "Design",
+      "Consultancy",
+      "Development"
+    ],
+    "isTop": true
+  }
+}

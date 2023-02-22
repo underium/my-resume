@@ -12,6 +12,9 @@ export default {
         128: "32rem",
         144: "36rem",
       },
+      fontSize: {
+        "body": "0.8rem",
+      },
     },
   },
 } as Options;

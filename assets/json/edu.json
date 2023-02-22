@@ -1,0 +1,26 @@
+{
+  "edu-1": {
+    "name": "Technical Degree in Systems Computer Engineering",
+    "place": "UNED",
+    "startDate": "1997",
+    "endDate": "2001",
+    "isTop": true,
+    "icon": "fa-solid fa-building-columns"
+  },
+  "edu-2": {
+    "name": "English - C1 Level",
+    "place": "EOI",
+    "startDate": "2001",
+    "endDate": "2004",
+    "isTop": true,
+    "icon": "fa-solid fa-graduation-cap"
+  },
+  "edu-3": {
+    "name": "German - Zertifikat Deutsch für den Beruf (B2 / C1 Level)",
+    "place": "EOI",
+    "startDate": "2006",
+    "endDate": "2013",
+    "isTop": true,
+    "icon": "fa-solid fa-graduation-cap"
+  }
+}

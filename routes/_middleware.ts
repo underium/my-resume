@@ -22,6 +22,8 @@ const ProtectedRoutes = [
 export type ServerState = {
   user: User | null;
   error: { code: number; msg: string } | null;
+  printable?: boolean;
+  short?: boolean;
 };
 
 export async function handler(

@@ -1,15 +1,15 @@
-import { useState } from "preact/hooks";
+import { useRef, useState } from "preact/hooks";
 import { Button } from "../components/Button.tsx";
+import { RadioButton } from "../components/RadioButton.tsx";
 import { Handlers, PageProps } from "$fresh/server.ts";
 
 interface Props {
   action?: () => void;
 }
 
-async function exportPdf() {
-  const response = await fetch("/api/pdf");
+async function exportPdf(checked: boolean) {
+  const response = await fetch(`/api/pdf?short=${checked}`);
   const base64 = await response.text();
-  console.log(base64);
 
   const obj = document.createElement("object");
   obj.style.width = "100%";
@@ -34,16 +34,25 @@ async function exportPdf() {
 }
 
 export default function DownloadPdf(props: Props) {
+  const checked = useRef<boolean>(false);
+
   return (
-    <div class="p-4 mx-auto max-w-screen-md">
+    <div class="p-4 mx-auto max-w-screen-md flex flex-row justify-center items-center w-fit">
       <Button
         onClick={() => {
           console.log("veamos que pasa");
-          exportPdf();
+          exportPdf(checked.current);
         }}
       >
         Download PDF
       </Button>
+      {/* Insert code to radio button */}
+      <RadioButton
+        onClick={() => {
+          checked.current = !checked.current;
+          console.log("veamos que pasa", checked);
+        }}
+      />
     </div>
   );
 }
